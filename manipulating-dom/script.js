@@ -30,3 +30,15 @@ pinkDiv.appendChild(inADiv);
 const meToo = document.createElement('p');
 meToo.textContent = "ME TOO!";
 pinkDiv.appendChild(meToo);
+
+const theButton = document.querySelector("#the-button");
+/*
+theButton.addEventListener('click', function(e) {
+    console.log(e);
+});
+*/
+
+theButton.addEventListener('click', (e) => {
+    console.log(e.target);
+    e.target.style.color = 'blue';
+});
